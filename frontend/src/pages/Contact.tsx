@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import PageSection from "../components/PageSection";
 import Button from "../components/Button";
 import logoImage from "../assets/logo.jpg";
+import { submitContactForm } from "../api/contact";
 
 type ContactFormData = {
   name: string;
@@ -29,9 +30,8 @@ const initialFormState: ContactFormData = {
 const Contact = () => {
   const { hash } = useLocation();
   const [formData, setFormData] = useState<ContactFormData>(initialFormState);
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [statusMessage, setStatusMessage] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     if (hash) {
@@ -53,30 +53,18 @@ const Contact = () => {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setStatus("idle");
+    setStatus("sending");
     setStatusMessage("");
-    setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to submit form");
-      }
-
+      await submitContactForm(formData);
       setFormData(initialFormState);
       setStatus("success");
-      setStatusMessage("Thanks \u2014 we\u2019ve received your message and we\u2019ll be in touch shortly.");
+      setStatusMessage("Message sent! We'll get back to you shortly.");
     } catch (error) {
       console.error(error);
       setStatus("error");
       setStatusMessage("Something went wrong. Please try again.");
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
@@ -150,8 +138,8 @@ const Contact = () => {
                 Message
                 <textarea name="message" rows={4} value={formData.message} onChange={handleChange} required />
               </label>
-              <Button type="submit">{isSubmitting ? "Sending..." : "Send my details"}</Button>
-              {status !== "idle" && (
+              <Button type="submit">{status === "sending" ? "Sending..." : "Send my details"}</Button>
+              {status !== "idle" && statusMessage && (
                 <p className={`form-feedback ${status === "success" ? "success" : "error"}`}>
                   {statusMessage}
                 </p>
