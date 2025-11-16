@@ -4,8 +4,8 @@ import Button from "../components/Button";
 import patioHero from "../assets/projects/PatioProject/Patio1.jpg";
 import gardenPathHero from "../assets/projects/GardenPathProject/GardenPath1.jpg";
 import circularPatioHero from "../assets/projects/CircularPatio/CircularPatio1.jpg";
-import woodenSleeperRaisedBedHero from "../assets/projects/WoodenSleeperRaisedBed/WoodenSleeperRaisedBed1.jpg";
-import gardenOverhaulHero from "../assets/projects/GardenOverhaul/GardenOverhaul1.jpg";
+import woodenSleeperRaisedBedHero from "../assets/projects/WoodenSleeperRaisedBed/WoodenSleeperRaisedBed3.jpg";
+import gardenOverhaulHero from "../assets/projects/GardenOverhaul/GardenOverhaul3.jpg";
 import deckingHero from "../assets/projects/Decking/Decking2.jpg";
 
 const projects = [
