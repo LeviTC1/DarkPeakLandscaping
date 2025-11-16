@@ -6,7 +6,7 @@ import patioThree from "../../assets/projects/PatioProject/Patio3.jpg";
 import patioFour from "../../assets/projects/PatioProject/Patio4.jpg";
 import patioFive from "../../assets/projects/PatioProject/Patio5.jpg";
 
-const gallery = [patioHero, patioTwo, patioThree, patioFour, patioFive];
+const gallery = [patioTwo, patioThree, patioFour, patioFive];
 
 const PatioProject = () => (
   <PageSection>
