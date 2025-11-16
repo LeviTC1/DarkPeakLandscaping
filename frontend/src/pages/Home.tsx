@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import ServiceCard from "../components/ServiceCard";
 import ContactStrip from "../components/ContactStrip";
 import { services as allServices } from "../data/services";
+import heroLogo from "../assets/logo.jpg";
 
 const processSteps = [
   {
@@ -50,7 +51,9 @@ const Home = () => {
             </div>
             <p className="hero__contact">Call Liam on 07702 252453 or email liamthorpe52@gmail.com</p>
           </div>
-          <div className="hero__media" aria-hidden="true" />
+          <div className="hero__media" aria-hidden="true">
+            <img src={heroLogo} alt="" loading="lazy" />
+          </div>
         </div>
       </PageSection>
 
