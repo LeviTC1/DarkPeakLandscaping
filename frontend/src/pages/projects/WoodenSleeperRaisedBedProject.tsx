@@ -1,11 +1,11 @@
 import PageSection from "../../components/PageSection";
 import Button from "../../components/Button";
-import woodenSleeperRaisedBedHero from "../../assets/projects/WoodenSleeperRaisedBed/WoodenSleeperRaisedBed1.jpg";
+import woodenSleeperRaisedBedHero from "../../assets/projects/WoodenSleeperRaisedBed/WoodenSleeperRaisedBed3.jpg";
+import woodenSleeperRaisedBed1 from "../../assets/projects/WoodenSleeperRaisedBed/WoodenSleeperRaisedBed1.jpg";
 import woodenSleeperRaisedBed2 from "../../assets/projects/WoodenSleeperRaisedBed/WoodenSleeperRaisedBed2.jpg";
-import woodenSleeperRaisedBed3 from "../../assets/projects/WoodenSleeperRaisedBed/WoodenSleeperRaisedBed3.jpg";
 import woodenSleeperRaisedBed4 from "../../assets/projects/WoodenSleeperRaisedBed/WoodenSleeperRaisedBed4.jpg";
 
-const gallery = [woodenSleeperRaisedBed2, woodenSleeperRaisedBed3, woodenSleeperRaisedBed4];
+const gallery = [woodenSleeperRaisedBed1, woodenSleeperRaisedBed2, woodenSleeperRaisedBed4];
 
 const WoodenSleeperRaisedBedProject = () => (
   <PageSection>

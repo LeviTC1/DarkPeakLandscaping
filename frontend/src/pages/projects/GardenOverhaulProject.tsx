@@ -1,12 +1,12 @@
 import PageSection from "../../components/PageSection";
 import Button from "../../components/Button";
-import gardenOverhaulHero from "../../assets/projects/GardenOverhaul/GardenOverhaul1.jpg";
+import gardenOverhaulHero from "../../assets/projects/GardenOverhaul/GardenOverhaul3.jpg";
+import gardenOverhaul1 from "../../assets/projects/GardenOverhaul/GardenOverhaul1.jpg";
 import gardenOverhaul2 from "../../assets/projects/GardenOverhaul/GardenOverhaul2.jpg";
-import gardenOverhaul3 from "../../assets/projects/GardenOverhaul/GardenOverhaul3.jpg";
 import gardenOverhaul4 from "../../assets/projects/GardenOverhaul/GardenOverhaul4.jpg";
 import gardenOverhaul5 from "../../assets/projects/GardenOverhaul/GardenOverhaul5.jpg";
 
-const gallery = [gardenOverhaul2, gardenOverhaul3, gardenOverhaul4, gardenOverhaul5];
+const gallery = [gardenOverhaul1, gardenOverhaul2, gardenOverhaul4, gardenOverhaul5];
 
 const GardenOverhaulProject = () => (
   <PageSection>
