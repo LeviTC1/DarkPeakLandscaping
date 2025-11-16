@@ -20,13 +20,13 @@ const WoodenSleeperRaisedBedProject = () => (
             gives the client tidy spaces for herbs, shrubs and seasonal colour.
           </p>
         </div>
-        <img src={woodenSleeperRaisedBedHero} alt="Finished oak sleeper raised beds" />
+        <img src={woodenSleeperRaisedBedHero} alt="Finished oak sleeper raised beds" loading="lazy" />
       </header>
 
       <section className="project-detail__gallery">
         {gallery.map((photo) => (
           <figure key={photo}>
-            <img src={photo} alt="Wooden sleeper raised bed project progress" />
+            <img src={photo} alt="Wooden sleeper raised bed project progress" loading="lazy" />
           </figure>
         ))}
       </section>

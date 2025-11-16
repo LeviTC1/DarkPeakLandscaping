@@ -22,13 +22,13 @@ const GardenPathProject = () => (
             dry and a crisp lawn edge finishes the walkway.
           </p>
         </div>
-        <img src={gardenPathHero} alt="Completed garden path with stepping stones" />
+        <img src={gardenPathHero} alt="Completed garden path with stepping stones" loading="lazy" />
       </header>
 
       <section className="project-detail__gallery">
         {gallery.map((photo) => (
           <figure key={photo}>
-            <img src={photo} alt="Garden path project progress" />
+            <img src={photo} alt="Garden path project progress" loading="lazy" />
           </figure>
         ))}
       </section>

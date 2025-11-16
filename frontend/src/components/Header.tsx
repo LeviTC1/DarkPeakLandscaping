@@ -21,7 +21,7 @@ const Header = () => {
     <header className="site-header">
       <div className="container site-header__inner">
         <Link to="/" className="brand" onClick={handleNavClick}>
-          <img src={logoMark} alt="Dark Peak Landscaping logo" className="brand-mark" />
+          <img src={logoMark} alt="Dark Peak Landscaping logo" className="brand-mark" loading="lazy" />
           <span>Dark Peak Landscaping</span>
         </Link>
         <button

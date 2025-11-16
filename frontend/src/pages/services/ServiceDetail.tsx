@@ -20,7 +20,7 @@ const ServiceDetail = () => {
             <h1>{service.title}</h1>
             <p>{service.description}</p>
           </div>
-          <img src={service.image} alt={service.title} />
+          <img src={service.image} alt={service.title} loading="lazy" />
         </header>
 
         <section className="project-detail__list">

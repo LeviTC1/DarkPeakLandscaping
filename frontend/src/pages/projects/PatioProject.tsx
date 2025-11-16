@@ -21,13 +21,13 @@ const PatioProject = () => (
             the existing paving and gravel and gives the client a calm seating area that is ready for everyday use.
           </p>
         </div>
-        <img src={patioHero} alt="Finished Indian stone patio" />
+        <img src={patioHero} alt="Finished Indian stone patio" loading="lazy" />
       </header>
 
       <section className="project-detail__gallery">
         {gallery.map((photo) => (
           <figure key={photo}>
-            <img src={photo} alt="Patio project progress" />
+            <img src={photo} alt="Patio project progress" loading="lazy" />
           </figure>
         ))}
       </section>

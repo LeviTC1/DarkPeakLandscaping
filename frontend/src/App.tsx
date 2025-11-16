@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import WhatsAppCTA from "./components/WhatsAppCTA";
+import CallNowCTA from "./components/CallNowCTA";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
@@ -35,6 +37,8 @@ const App = () => {
         </Routes>
       </main>
       <Footer />
+      <WhatsAppCTA />
+      <CallNowCTA />
     </div>
   );
 };

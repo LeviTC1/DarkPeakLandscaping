@@ -21,13 +21,13 @@ const GardenOverhaulProject = () => (
             owners to keep on top of throughout the seasons.
           </p>
         </div>
-        <img src={gardenOverhaulHero} alt="Completed garden overhaul with raised beds" />
+        <img src={gardenOverhaulHero} alt="Completed garden overhaul with raised beds" loading="lazy" />
       </header>
 
       <section className="project-detail__gallery">
         {gallery.map((photo) => (
           <figure key={photo}>
-            <img src={photo} alt="Garden overhaul project progress" />
+            <img src={photo} alt="Garden overhaul project progress" loading="lazy" />
           </figure>
         ))}
       </section>

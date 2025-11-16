@@ -21,13 +21,13 @@ const DeckingProject = () => (
             gives the client a solid, low-maintenance seating area that ties into the rest of the garden.
           </p>
         </div>
-        <img src={deckingHero} alt="Completed composite decking seating area" />
+        <img src={deckingHero} alt="Completed composite decking seating area" loading="lazy" />
       </header>
 
       <section className="project-detail__gallery">
         {gallery.map((photo) => (
           <figure key={photo}>
-            <img src={photo} alt="Decking project progress" />
+            <img src={photo} alt="Decking project progress" loading="lazy" />
           </figure>
         ))}
       </section>

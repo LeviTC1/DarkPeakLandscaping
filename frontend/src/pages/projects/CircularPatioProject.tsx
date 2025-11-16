@@ -21,13 +21,13 @@ const CircularPatioProject = () => (
             into the existing paths. The curved seating area now doubles as a focal point from the house.
           </p>
         </div>
-        <img src={circularPatioHero} alt="Completed circular patio with stone setts" />
+        <img src={circularPatioHero} alt="Completed circular patio with stone setts" loading="lazy" />
       </header>
 
       <section className="project-detail__gallery">
         {gallery.map((photo) => (
           <figure key={photo}>
-            <img src={photo} alt="Circular patio project progress" />
+            <img src={photo} alt="Circular patio project progress" loading="lazy" />
           </figure>
         ))}
       </section>
