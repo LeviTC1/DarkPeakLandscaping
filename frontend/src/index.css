@@ -263,18 +263,42 @@ h3 {
 .social-icons {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .social-icons a svg {
-  width: 24px;
-  height: 24px;
-  fill: #e2e8f0;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
   transition: 0.25s ease;
 }
 
 .social-icons a:hover svg {
-  opacity: 0.8;
+  opacity: 0.85;
+}
+
+.social-link {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(226, 232, 240, 0.12);
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.social-link.social-link--facebook {
+  background: rgba(23, 120, 242, 0.1);
+  color: #1877f2;
+  border-color: rgba(23, 120, 242, 0.35);
+}
+
+.social-link.social-link--instagram {
+  background: radial-gradient(circle at 30% 30%, #fdf497 0%, #fd5949 45%, #d6249f 70%, #285aeb 100%);
+  color: #fff;
+  border-color: transparent;
 }
 
 @media (max-width: 640px) {
